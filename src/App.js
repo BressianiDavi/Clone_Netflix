@@ -2,7 +2,7 @@ import Tmdb from "./Tmdb";
 import { useEffect, useState } from "react";
 import MovieRow from "./components/MovieRow";
 
-export default function App() {
+function App() {
     const [movieList, setMovieList] = useState([]);
 
     useEffect(() => {
@@ -19,11 +19,11 @@ export default function App() {
         <div className="page">
             <section className="lists">
                 {movieList.map((item, key) => (
-                    <div>
-                        <MovieRow key={key} title={item.title} items={item.items}></MovieRow>
-                    </div>
+                    <MovieRow key={key} title={item.title} items={item.items}></MovieRow>
                 ))}
             </section>
         </div>
     );
 }
+
+export default App;
