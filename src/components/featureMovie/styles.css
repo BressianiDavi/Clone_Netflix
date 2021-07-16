@@ -8,8 +8,64 @@
     background: linear-gradient(to top, #111 10%, transparent 90%);
 }
 
-.feature--horinzontal {
+.feature--horizontal {
     width: inherit;
     height: inherit;
     background: linear-gradient(to right, #111 30%, transparent 70%);
+}
+
+.feature--name {
+    font-size: 8.3vh;
+    font-weight: bold;
+}
+
+.feature--info {
+    font-size: 2.5vh;
+    font-weight: bold;
+    margin-top: 2vh;
+}
+
+.feature--points,
+.feature--year,
+.feature--seasons {
+    display: inline-block;
+    margin-right: 2vh;
+}
+
+.feature--points {
+    color: #46d369;
+}
+
+.feature--description {
+    margin-top: 2vh;
+    font-size: 2.6vh;
+    color: #999;
+    max-width: 40%;
+}
+
+.watch--button,
+.mylist--button {
+    display: inline-block;
+    font-size: 2.7vh;
+    font-weight: bold;
+    padding: 2vh 3.4vh;
+    border-radius: 0.5vh;
+    text-decoration: none;
+    margin-top: 1vh;
+    margin-right: 1.3vh;
+    margin-bottom: 1vh;
+}
+
+.watch--button {
+    background-color: #fff;
+    color: #000;
+}
+
+.assistir {
+    margin-left: 0.5vh;
+}
+
+.mylist--button {
+    background-color: #333;
+    color: #fff;
 }
