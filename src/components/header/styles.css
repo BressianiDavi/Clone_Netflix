@@ -1,0 +1,21 @@
+header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+}
+
+.header--logo img {
+    width: 5vw;
+}
+
+.header--user img {
+    width: 3vw;
+    padding-top: 1vh;
+}
