@@ -2,6 +2,7 @@ import Tmdb from "./Tmdb";
 import { useEffect, useState } from "react";
 import MovieRow from "./components/movieRow/index";
 import FeatureMovie from "./components/featureMovie/index";
+import Header from "./components/header/index";
 import "./App.css";
 
 function App() {
@@ -27,8 +28,9 @@ function App() {
 
     return (
         <div className="page">
-            {featureData && <FeatureMovie item={featureData} />}
+            <Header />
 
+            {featureData && <FeatureMovie item={featureData} />}
             <section className="lists">
                 {movieList.map((item, key) => (
                     <MovieRow key={key} title={item.title} items={item.items}></MovieRow>
