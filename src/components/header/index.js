@@ -13,10 +13,7 @@ function Header() {
             </div>
             <div className="header--user">
                 <a href="/">
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-                        alt="Usuário"
-                    ></img>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Usuário" />
                 </a>
             </div>
         </header>
