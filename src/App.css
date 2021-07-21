@@ -13,3 +13,8 @@ body {
 .lists {
     margin-top: -30vh;
 }
+
+footer {
+    margin: 3vh 0;
+    text-align: center;
+}

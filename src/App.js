@@ -8,6 +8,7 @@ import "./App.css";
 function App() {
     const [movieList, setMovieList] = useState([]);
     const [featureData, setFeatureData] = useState(null);
+    const [blackHeader, setBlackHeader] = useState(false);
 
     useEffect(() => {
         const loadAll = async () => {
@@ -26,9 +27,24 @@ function App() {
         loadAll();
     }, []);
 
+    useEffect(() => {
+        const scrollListiner = () => {
+            if (window.scrollY > 10) {
+                setBlackHeader(true);
+            } else {
+                setBlackHeader(false);
+            }
+        };
+        window.addEventListener("scroll", scrollListiner);
+
+        return () => {
+            window.removeEventListener("scroll", scrollListiner);
+        };
+    }, []);
+
     return (
         <div className="page">
-            <Header />
+            <Header black={blackHeader} />
 
             {featureData && <FeatureMovie item={featureData} />}
             <section className="lists">
@@ -36,6 +52,12 @@ function App() {
                     <MovieRow key={key} title={item.title} items={item.items}></MovieRow>
                 ))}
             </section>
+
+            <footer>
+                <p>Desenvolvido em aula com a B7Web</p>
+                <p>Dados retiradas do Themoviedb.org</p>
+                <p>Direitos de imagem para a Netflix</p>
+            </footer>
         </div>
     );
 }
