@@ -8,11 +8,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2vw;
+    padding: 5vh 2.2vw;
+    background: transparent;
+    transition: all ease 0.5s;
+}
+
+header.black {
+    background-color: #141414;
 }
 
 .header--logo img {
-    width: 5vw;
+    width: 6vw;
 }
 
 .header--user img {

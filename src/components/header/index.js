@@ -1,8 +1,8 @@
 import "./styles.css";
 
-function Header() {
+function Header({ black }) {
     return (
-        <header>
+        <header className={black ? "black" : ""}>
             <div className="header--logo">
                 <a href="/">
                     <img
