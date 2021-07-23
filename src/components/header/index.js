@@ -11,6 +11,21 @@ function Header({ black }) {
                     />
                 </a>
             </div>
+            <div>
+                <a href="/">Início</a>
+            </div>
+            <div>
+                <a href="/">Séries</a>
+            </div>
+            <div>
+                <a href="/">Filmes</a>
+            </div>
+            <div>
+                <a href="/">Bombando</a>
+            </div>
+            <div>
+                <a href="/">Minha Lista</a>
+            </div>
             <div className="header--user">
                 <a href="/">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Usuário" />

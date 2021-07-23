@@ -30,3 +30,21 @@
 .movieRow--item img:hover {
     transform: scale(1);
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chevron--left {
+    position: absolute;
+    display: flex;
+    z-index: 999;
+}
+
+.chevron--right {
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 999;
+}
