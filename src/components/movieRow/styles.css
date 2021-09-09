@@ -12,7 +12,7 @@
 }
 
 .movieRow--list {
-    width: 99999999999999px;
+    transition: all ease 0.5s;
 }
 
 .movieRow--item {
@@ -36,15 +36,30 @@
     justify-content: space-between;
 }
 
-.chevron--left {
+.movieRow--left,
+.movieRow--right {
     position: absolute;
-    display: flex;
+    width: 40px;
+    height: 225px;
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: 0;
+}
+.movieRow--left {
+    left: 0;
 }
 
-.chevron--right {
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    z-index: 999;
+.movieRow--right {
+    right: 0;
+}
+
+.movieRow:hover .movieRow--right,
+.movieRow:hover .movieRow--left {
+    opacity: 1;
 }
