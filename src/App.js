@@ -42,6 +42,14 @@ function App() {
         };
     }, []);
 
+    if (movieList.length <= 0) {
+        return (
+            <div className="loading">
+                <img src="https://c.tenor.com/DQyztbEmqnYAAAAC/netflix-loading.gif" alt="loading" />
+            </div>
+        );
+    }
+
     return (
         <div className="page">
             <Header black={blackHeader} />

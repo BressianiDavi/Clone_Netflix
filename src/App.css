@@ -18,3 +18,25 @@ footer {
     margin: 3vh 0;
     text-align: center;
 }
+
+.loading {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    z-index: 99;
+}
+
+@media (max-width: 760px) {
+    .loading {
+        height: 10vh;
+        width: 100px;
+    }
+}
