@@ -8,7 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5vh 2.2vw;
+    padding: 0 30px;
     background: transparent;
     transition: all ease 0.5s;
 }
@@ -26,5 +26,11 @@ header.black {
     padding-top: 1vh;
 }
 
-.options--header {
+@media (max-width: 760px) {
+    .header--logo img {
+        width: 100px;
+    }
+    .header--user img {
+        width: 40px;
+    }
 }
