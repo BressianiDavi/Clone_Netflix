@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+# Clone Netflix é um projeto desenvolvido para estudo através de aula no Youtube com o canal B7 Web.
+
+
+#
+O projeto foi realizado em aula com o intuito de aprender mais sobre desenvolvimento de interfaces de usuário com ReactJS.
+# 
+Este, foi iniciado com o gerenciador de pacotes Yarn em React, as lógicas foram criadas em JavaScript, a estrutura em HTML e estilizado com CSS.
+# 
+As informações foram retiradas da API do TMDB.com, deixando claro no footer da aplicação que os direitos de imagem pertencem a Netflix.
+#
+A biblioteca Material UI foi usada exclusivamente para obtenção dos ícones.
+#
+Foram utilizadas práticas em JavaScript para identificar e calcular o Scroll da tela e realizar verificações na rolagem dos pôsteres, evitando que o mesmo passe do tamanho total de imagens.
+#
+Ao carregar as informações da API, é exibido um loading, para evitar que haja uma tela vazia ou quebrada no carregamento. 
+#
+Essa aplicação também foi criada com responsividade em CSS puro.
+#
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
